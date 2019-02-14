@@ -1,0 +1,121 @@
+<html>
+	<head>
+        	<title>Valentine's Day</title>
+		<meta charset="UTF-8">
+    	</head>
+    <body>
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<style>
+body {
+  background: #FFCAE2;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.main {
+  width: 900px;
+  height: 900px;
+  background: url('http://jyloo.xyz/assets/img/background.png');
+  background-size: cover;
+  margin: 0 auto;
+  position: relative;
+}
+
+.balloon {
+  z-index: 2;
+  width: 575px;
+  height: 650px;  
+  position: absolute;
+  left: 20%;
+  top: 15%;
+  background: url('http://jyloo.xyz/assets/img/balloon.png') no-repeat;
+  background-size: cover;
+  animation-name: floating;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.cloud-right {
+  z-index: 1;
+  width: 354px;
+  height: 500px;  
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  background: url('http://jyloo.xyz/assets/img/cloud-right.png') no-repeat;
+  background-size: cover;
+  animation-name: floating;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.cloud-left-top {
+  z-index: 3;
+  width: 262px;
+  height: 173px;  
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  background: url('http://jyloo.xyz/assets/img/cloud-right.png') no-repeat;
+  background-size: cover;
+  animation-name: floating;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.cloud-left-bottom {
+  z-index: 1;
+  width: 151px;
+  height: 85px;  
+  position: absolute;
+  left: 20%;
+  top: 53%;
+  background: url('http://jyloo.xyz/assets/img/cloud-right.png') no-repeat;
+ background-size: cover;
+  animation-name: floating;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.message {
+  z-index: 3;
+  width: 200px; //515px;
+  height: 158px; //407px;  
+  position: absolute;
+  left: 55%;
+  top: 53%;
+  background: url('http://jyloo.xyz/assets/img/chat.png') no-repeat;
+  background-size: cover;
+  animation: floating 4s infinite ease-in-out, fade 2s 1 ease-in-out;
+}
+.message:after {
+  content: 'Hi Quyên, Chúc Quyên Valentine vui vẻ, ngày càng xinh nha ^^!👸💖';
+  color: #3f3f3f;
+  font-size: 16px;
+  position: absolute;
+  padding: 40px 30px 30px 30px;
+}
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+@keyframes fade{
+    0% { opacity:0; transform:  translate(0px,40px); }
+    100% { opacity:1; transform:  translate(0px,0px); }
+}
+#Credit:https://code.sololearn.com/WkE5BnKor324/?ref=app
+</style>
+	<div class='main'>
+  		<div class="balloon"></div>
+  		<div class="cloud-right"></div>
+  		<div class="cloud-left-top"></div>
+  		<div class="cloud-left-bottom"></div>
+  		<div class="message"></div>
+	</div>
+    </body>
+</html>
